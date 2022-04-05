@@ -5,11 +5,11 @@
             "name": "PDM Cli Example",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/src/main.py",
+            "module": "my_project",
             "console": "integratedTerminal",
             "env": {
-                "PYTHONPATH": "__pypackages__/3.9/lib"
-            }
+                "PYTHONPATH": "__pypackages__/3.9/lib",
+            },
         }
     ]
 }
