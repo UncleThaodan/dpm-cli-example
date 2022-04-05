@@ -4,7 +4,7 @@
 def start():
     print('Success!')
 
-    from submodule import importedFunction
+    from .submodule import importedFunction
     importedFunction()
 
 

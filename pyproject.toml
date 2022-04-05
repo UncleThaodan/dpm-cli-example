@@ -1,7 +1,7 @@
 [project]
-name = "pdm-cli-sample"
+name = "my_project"
 version = "0.1.0"
-description = "Can't be asked to debug why pyproject.toml isn't working? You've come to the right place."
+description = "Update pyproject.toml to fit your needs."
 authors = [
     {name = "UncleThaodan", email = "sample@email.fake"},
 ]
@@ -17,14 +17,12 @@ classifiers = [
 ]
 
 [project.scripts]
-pdm-cli-sample = "main:start"
+run-my-project = "my_project.main:start"
 
 [project.urls]
 Repository = "https://github.com/UncleThaodan/dpm-cli-example"
 
 [tool.pdm]
-package-dir = "src"
-includes=["src"]
 
 [build-system]
 requires = ["pdm-pep517>=0.12.0"]
