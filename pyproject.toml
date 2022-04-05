@@ -1,0 +1,31 @@
+[project]
+name = "pdm-cli-sample"
+version = "0.1.0"
+description = "Can't be asked to debug why pyproject.toml isn't working? You've come to the right place."
+authors = [
+    {name = "UncleThaodan", email = "sample@email.fake"},
+]
+license-expression = "MIT"
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pdm-cli-sample = "main:start"
+
+[project.urls]
+Repository = "https://github.com/UncleThaodan/dpm-cli-example"
+
+[tool.pdm]
+package-dir = "src"
+includes=["src"]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
