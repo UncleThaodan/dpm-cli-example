@@ -15,7 +15,7 @@ WORKDIR /app
 # Git is optional here, but required if you have dependencies that need to be
 # installed from git repos.
 RUN apt update && \
-    apt upgrade && \
+    apt upgrade -y && \
     apt install -y --no-install-recommends git && \
     pip install -U pip setuptools wheel pdm
 
